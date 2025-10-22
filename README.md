@@ -1,7 +1,3 @@
-非常好 👍 你这段程序其实已经是一个**完整的 SNESIM 多分辨率加速模拟示例**，可以整理成一个专业又清晰的 GitHub `README.md`。下面是一份我帮你准备好的 **README 模板**，专门针对你这份 C# 实现的 **加速版 SNESIM (with Reverse Query + Multiresolution Pyramid)**：
-
----
-
 # 🪶 SNESIM with Reverse Query & Multi-Resolution Pyramid (C# Implementation)
 
 A high-performance **SNESIM (Single Normal Equation Simulation)** algorithm implemented in C#, featuring
@@ -12,21 +8,8 @@ This implementation is part of the **JAM8 Geological Modeling Library**, designe
 
 ## 🧩 Features
 
-* 🧠 **Reverse Query Search Tree**
+* **Reverse Query Search Tree**
   Efficient pattern retrieval using reverse-search optimization in the STree structure.
-
-* 🪜 **Multi-Resolution Pyramid Simulation**
-  Training image (TI) and realization grids are simulated from coarse to fine scales,
-  dramatically accelerating convergence while preserving geological structure.
-
-* 🔁 **Mersenne Twister RNG**
-  Ensures deterministic reproducibility with user-defined random seeds.
-
-* 🧱 **Anisotropic Template Support**
-  Supports both 2D and 3D anisotropic neighborhood templates (`Mould`).
-
-* ⚙️ **GSLIB I/O Compatible**
-  Directly reads/writes GSLIB grid files (`.out`) for easy data exchange.
 
 ---
 
@@ -130,8 +113,6 @@ re.convert_to_grid().save_to_gslib(outPath, "default_name", -99);
 | Optimization                | Effect                                         |
 | --------------------------- | ---------------------------------------------- |
 | Reverse-Query STree         | Reduces redundant pattern lookup               |
-| Multi-Resolution Pyramid    | Cuts simulation time by ~60-80% on large grids |
-| Anisotropic Template        | Enhances geological realism                    |
 | Parallel-ready architecture | Easily extendable to multithreading            |
 
 ---
@@ -139,11 +120,6 @@ re.convert_to_grid().save_to_gslib(outPath, "default_name", -99);
 ## 🧠 Citation / Reference
 
 If you use this code in research, please cite:
-
-> Strebelle, S. (2002). *Conditional simulation of complex geological structures using multiple-point statistics.*
-> Mathematical Geology, 34(1), 1–21.
-
-and
 
 > [JAM8 Geological Modeling Library (2025)](https://github.com/Yusiyu0601/snesim_with_reverse_query_search_tree)
 
@@ -188,18 +164,6 @@ dotnet run --project JAM8.Algorithms.Geometry
 
 ---
 
-## 🧩 Future Work
-
-* [ ] Add 3D multi-resolution support
-* [ ] Parallel pattern retrieval (OpenMP-like threading)
-* [ ] Integration with Direct Sampling and Deep Generative frameworks
-
----
-
 ## 🪪 License
 
 MIT License © 2025 [Yusiyu0601](https://github.com/Yusiyu0601)
-
----
-
-是否希望我帮你加上 **中英文双语版 README**（中英文对照段落）？这样在 GitHub 上看起来会更专业、也方便国内外用户使用。
