@@ -1,4 +1,5 @@
 ﻿// Include the System.Diagnostics namespace for the Stopwatch class
+
 using System.Diagnostics;
 
 // Include custom namespaces for geometry algorithms and utilities
@@ -93,7 +94,7 @@ MyConsoleHelper.write_value_to_console(
 
 // Build output directory: repository-root/out
 string outDir = Path.Combine(repoRoot, "out");
-Directory.CreateDirectory(outDir);              // create the folder if it doesn't exist
+Directory.CreateDirectory(outDir); // create the folder if it doesn't exist
 
 string outPath = Path.Combine(outDir, "sim.out");
 
