@@ -61,8 +61,14 @@ int re_nz = 1;
 // Create a grid structure for the realization
 GridStructure re_gs = GridStructure.create_simple(re_nx, re_ny, re_nz);
 
-// Create an empty grid property for the realization
-GridProperty origin_re = GridProperty.create(re_gs);
+// Load conditional data
+string cd_path = Path.Combine(repoRoot, "conditional data", "cd50_channel.dat");
+CData cd = CData.read_from_gslib(cd_path, 0, 1, -1, -99);
+
+// Assign the conditional data to the initial simulation grid.
+GridProperty origin_re = null;
+if (cd != null)
+    origin_re = cd.coarsened(re_gs).coarsened_grid.first_gridProperty();
 
 // Start timing the simulation
 var sw = Stopwatch.StartNew();
