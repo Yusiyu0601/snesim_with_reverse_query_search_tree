@@ -184,12 +184,9 @@ dotnet run --project JAM8.Algorithms.Geometry
 
 ## Integration Notes
 
-1. 
-By extending the spatial-correlation control range level by level, it drastically reduces the number of iterations needed for large-scale structures.
-2. 
-Inside every level the reverse-query mechanism remains the core innovation; it can run stand-alone or be seamlessly combined with the pyramid workflow.
-3. 
-Conceptually this multi-resolution strategy is identical to classical multigrid ideas—its sole purpose is efficiency, introducing no additional theoretical difference.
+1. By extending the spatial-correlation control range level by level, it drastically reduces the number of iterations needed for large-scale structures.
+2. Inside every level the reverse-query mechanism remains the core innovation; it can run stand-alone or be seamlessly combined with the pyramid workflow.
+3. Conceptually this multi-resolution strategy is identical to classical multigrid ideas—its sole purpose is efficiency, introducing no additional theoretical difference.
 
 ---
 
