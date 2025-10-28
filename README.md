@@ -59,8 +59,11 @@ This structure avoids scanning the full STree and allows **parallel filtering** 
 ## Summary of Advantages
 
 ✅ Efficient probability retrieval and reduced tree traversal cost in sparse-data conditions
+
 ✅ Flexible control between reverse and forward search modes based on user-defined ratios
+
 ✅ Significant efficiency gain through parallel reverse-query processing
+
 ✅ Fully compatible with standard SNESIM workflow and templates
 
 ---
