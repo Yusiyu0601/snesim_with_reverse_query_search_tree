@@ -196,6 +196,6 @@ dotnet run --project JAM8.Algorithms.Geometry
 ## Reference
 
 > Yusiyu (2025). *SNESIM with Reverse Query Search Tree (C# Implementation).*
-> JAM8 Geological Modeling Library.
+>
 > [https://github.com/Yusiyu0601/snesim_with_reverse_query_search_tree](https://github.com/Yusiyu0601/snesim_with_reverse_query_search_tree)
 
